@@ -1,1 +1,29 @@
+# --- Core Web Framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.1
 
+# --- Data Models (Pydantic) ---
+pydantic==2.9.2
+pydantic-settings==2.4.0
+
+# --- HTTP Requests (External APIs: MTA, Google, Waze) ---
+requests==2.32.3
+python-dotenv==1.0.1
+
+# --- Database (MongoDB / Firestore optional) ---
+pymongo==4.7.3
+google-cloud-firestore==2.16.0   # Optional, only if you will use Firestore
+
+# --- GTFS Parsing & Geolocation Utilities ---
+gtfslib==1.2.0            # Optional, for GTFS feeds
+geopy==2.4.1              # Distance, geolocation helpers
+
+# --- Data Processing ---
+pandas==2.2.3
+numpy==1.26.4
+
+# --- CORS & Middleware ---
+starlette==0.40.0
+
+# --- Optional Logging, Debugging, Tools ---
+loguru==0.7.2
